@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    let myArray = ["Hello", "world!"];
+
+    // Solution 1: Basic string concatenation
+    let htmlString = '';
+    for (let i = 0; i < myArray.length; i++) {
+      htmlString += `<p>${myArray[i]}</p>`;
+    }
+    document.getElementById("myDiv").innerHTML = htmlString;
+    
+    // Solution 2: Using map
+    // let htmlString = myArray.map(item => `<p>${item}</p>`).join('');
+    // document.getElementById("myDiv").innerHTML = htmlString; //Commented out for comparison
+
+  </script>
+</body>
+</html>
